@@ -7,8 +7,7 @@ install:
   - cmd: pip install -r requirements.txt
 
 build_script:
-  - cmd: fbs freeze --debug
-  - cmd: fbs installer
+  - cmd: python -m fbs freeze --debug
 
 test: off
 
