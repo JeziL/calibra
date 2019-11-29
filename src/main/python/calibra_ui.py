@@ -5,9 +5,8 @@ from PyQt5.QtWidgets import *
 from eqn_solver import solve
 
 class CalibraForm(QMainWindow):
-    def __init__(self, app_context, parent=None):
+    def __init__(self, parent=None):
         QMainWindow.__init__(self, parent)
-        self.app_context = app_context
         self.init_main_frame()
 
     def init_main_frame(self):
