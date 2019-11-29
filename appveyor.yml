@@ -7,10 +7,11 @@ install:
   - cmd: pip install -r requirements.txt
 
 build_script:
-  - cmd: fbs freeze
+  - cmd: fbs freeze --debug
   - cmd: fbs installer
 
 test: off
 
 artifacts:
-  - path: target/*.exe
+  - path: target/Calibra
+    type: zip
