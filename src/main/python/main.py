@@ -1,4 +1,3 @@
-import os
 import sys
 from calibra_ui import CalibraForm
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
