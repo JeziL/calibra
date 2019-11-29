@@ -1,0 +1,6 @@
+PyQt5==5.12.1
+PyInstaller==3.4
+fbs==0.6.6
+numpy==1.15.4
+scipy==1.2.0
+pywin32==224
