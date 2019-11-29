@@ -1,13 +1,12 @@
 import sys
+from PyQt5.QtWidgets import QApplication
 from calibra_ui import CalibraForm
-from fbs_runtime.application_context.PyQt5 import ApplicationContext
 
 
 if __name__ == "__main__":
-    appctxt = ApplicationContext()
+    app = QApplication(sys.argv)
     window = CalibraForm()
     window.setWindowTitle("转台校准")
     window.resize(750, 480)
     window.show()
-    exit_code = appctxt.app.exec_()
-    sys.exit(exit_code)
+    sys.exit(app.exec_())
